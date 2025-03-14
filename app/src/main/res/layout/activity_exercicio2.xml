@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Exercicio2">
+
+    <EditText
+        android:id="@+id/inpNum2"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpNum1" />
+
+    <EditText
+        android:id="@+id/inpNum1"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:onClick="somar"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inpNum2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="subtrair"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/inpNum2" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:onClick="multiplicar"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/inpNum2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="78dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:onClick="dividir"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/inpNum2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
